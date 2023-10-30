@@ -15,9 +15,9 @@ const AddEditTransactions = (props) => {
   const host =
     process.env.NODE_ENV === 'production'
       ? 'https://cash-book.vercel.app'
-      : 'http://localhost:5000'
+      : 'http://localhost:5001'
 
-  //  const host = 'http://localhost:5000'
+  //  const host = 'http://localhost:5001'
 
   const [loading, setLoading] = useState(false)
 
@@ -96,6 +96,7 @@ const AddEditTransactions = (props) => {
               <Select.Option value='education'>Education</Select.Option>
               <Select.Option value='medical'>Medical</Select.Option>
               <Select.Option value='tax'>Tax</Select.Option>
+              <Select.Option value='capital'>Capital</Select.Option>
             </Select>
           </Form.Item>
 
